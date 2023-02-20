@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+	justify-content: flex-end;
+}
+
+.nav-bar li {
+  margin-right: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #c0392b;
+}
+
+.form-group {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: none; /* Remove box-shadow */
+}
+
+.form-group textarea {
+  height: 120px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-group h2 {
+  text-align: center; /* Add text-align property */
+  margin-bottom: 20px;
+}
+
+.footer-img {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.bio {
+	margin-left: 60px;
+	width: 50%;
+	
+}
+
+#headshot {
+	margin-left:600px;
+	margin-top: 20px;
+}
