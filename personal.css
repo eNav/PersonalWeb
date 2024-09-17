@@ -9,7 +9,8 @@
 }
 
 .nav-bar li {
-  margin-right: 20px;
+  margin-right: 40px;
+  margin-top: 30px;
 }
 
 .nav-bar a {
@@ -21,6 +22,8 @@
 .nav-bar a:hover {
   color: #c0392b;
 }
+
+
 
 .form-group {
   max-width: 600px;

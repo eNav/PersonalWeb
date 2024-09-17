@@ -1,0 +1,45 @@
+.resume-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .resume-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .resume-item {
+    margin-bottom: 30px;
+  }
+
+  .resume-item h3 {
+    margin: 0;
+    color: #75c512;
+  }
+
+  .resume-item p {
+    margin: 5px 0;
+  }
+
+  .resume-item span {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skills-list li {
+    background-color: #75c512;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
