@@ -17,18 +17,40 @@
 		</nav>
 	  <div class="top-banner">
 		<div id ="logo"><img src="Images/EN.png" width="150" height="100" alt=""/>
-			<h1>Edwin's Testing Website</h1>
+			<h1>Hi, I'm Edwin <br /> I am a <span id="typewriter"></span
+				><span id="cursor">|</span></h1>
+				<script> function sleep(ms) {
+					return new Promise((resolve) => setTimeout(resolve, ms));
+				  }
+				  const phrases = ["Software Engineer", "Mobile App Developer", "Data Engineer"];
+				  const el = document.getElementById("typewriter");
+				  let sleepTime = 100;
+				  let curPhraseIndex = 0;
+				  const writeLoop = async () => {
+					while (true) {
+					  let curWord = phrases[curPhraseIndex];
+					  for (let i = 0; i < curWord.length; i++) {
+						el.innerText = curWord.substring(0, i + 1);
+						await sleep(sleepTime);
+					  }
+					  await sleep(sleepTime * 10);
+					  for (let i = curWord.length; i > 0; i--) {
+						el.innerText = curWord.substring(0, i - 1);
+						await sleep(sleepTime);
+					  }
+					  await sleep(sleepTime * 5);
+					  if (curPhraseIndex === phrases.length - 1) {
+						curPhraseIndex = 0;
+					  } else {
+						curPhraseIndex++;
+					  }
+					}
+				  };
+				  writeLoop();; </script>
 	  </div></div>
 		</header>
 		<main class="main">
-			<section class="homepagepg">
-			<div class="homepagepg">
-				<h2>This is example text</h2>
-					<p1>
-					This is the paragraph for the example section
-					</p1>
-				</div>
-			</section>
+			
 			
 		
 		</main>
