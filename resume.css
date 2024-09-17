@@ -3,47 +3,49 @@
 
 
 .resume-section {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+  width: 70%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Slight background color */
+  color: #FFFFFF;
+  border-radius: 8px;
+  line-height: 1.6;
+}
 
-  .resume-section h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
+.resume-section h2 {
+  color: #bfbfbf;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 28px;
+}
 
-  .resume-item {
-    margin-bottom: 30px;
-  }
+.resume-section h3 {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
 
-  .resume-item h3 {
-    margin: 0;
-    color: #75c512;
-  }
+.resume-section p, .resume-section ul {
+  margin: 10px 0;
+  text-align: justify;
+  font-size: 18px;
+}
 
-  .resume-item p {
-    margin: 5px 0;
-  }
+.resume-section ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
 
-  .resume-item span {
-    font-weight: bold;
-    color: #333;
-  }
+.resume-section li {
+  margin-bottom: 10px;
+}
 
-  .skills-list {
-    list-style: none;
-    padding: 0;
-  }
+.resume-section .bold {
+  font-weight: bold;
+}
 
-  .skills-list li {
-    background-color: #75c512;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+@media (max-width: 768px) {
+  .resume-section {
+    width: 90%;
   }
+}
