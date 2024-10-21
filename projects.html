@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Edwin Navas</title>
     <link href="projects.css" rel="stylesheet" type="text/css">
+    <!-- Include Octicons and GitHub Activity Feed CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+    <!-- Include Mustache and GitHub Activity Feed JS -->
+    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script type="text/javascript"
+        src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+
+    <!-- For dark theme support -->
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
 </head>
+
 <body>
     <header class="top-header">
         <nav class="nav-bar">
@@ -13,37 +26,60 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li> 
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
         <div class="top-banner">
-            <div id ="logo"><img src="Images/EN-cropped.png" width="200" height="50" alt=""/>
-          </div>
+            <div id="logo"><img src="Images/EN-cropped.png" width="200" height="50" alt="" />
+            </div>
     </header>
 
     <main class="main">
         <div class="projects-section">
             <h2>My Projects</h2>
-            <p>Here you can find a selection of my projects that are not included on my resume, showcasing my skills in software development over the years.</p>
+            <p>Here you can find a selection of my projects that are not included on my resume, showcasing my skills in
+                software development over the years.</p>
 
             <h3>Bar Application - June 2024</h3>
-            <p>Developed the Hotspot app using React Native, integrating the Google Maps API to create an intuitive user interface while applying UI/UX design principles to enhance user experience. The app connects users to the best bars in New York City, providing real-time location data, user ratings, and essential bar information to simplify the nightlife experience.</p>
+            <p>Developed the Hotspot app using React Native, integrating the Google Maps API to create an intuitive user
+                interface while applying UI/UX design principles to enhance user experience. The app connects users to
+                the best bars in New York City, providing real-time location data, user ratings, and essential bar
+                information to simplify the nightlife experience.</p>
 
             <h3>Catch the Balls - May 2019</h3>
-            <p>Catch the Balls is an engaging mobile game developed using C# and the Unity game engine. In this fast-paced game, players must catch falling balls, with the speed increasing over time to heighten the challenge. </p>
+            <p>Catch the Balls is an engaging mobile game developed using C# and the Unity game engine. In this
+                fast-paced game, players must catch falling balls, with the speed increasing over time to heighten the
+                challenge. </p>
+
+            <h4>GitHub Activity</h4>
+            <div id="github-activity-feed"></div> <!-- This is where the feed will appear -->
+
+            <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+            <script type="text/javascript" src="node_modules/github-activity-feed/dist/github-activity.min.js"></script>
+            <script>
+                // Initialize the GitHub activity feed
+                GitHubActivity.feed({
+                    username: 'eNav', // Replace with the GitHub username you want to display
+                    selector: '#github-activity-feed',
+                    limit: 10 // Number of events to display
+                });
+            </script>
+
+
         </div>
     </main>
 
     <footer class="footer-img">
         <a href="https://www.linkedin.com/in/edwin-navas-952290166/" target="_blank">
-            <img src="Images/linkdin.png" width="80" height="66" alt="LinkedIn"/>
+            <img src="Images/linkdin.png" width="80" height="66" alt="LinkedIn" />
         </a>
         <a href="https://www.instagram.com/enavas.18" target="_blank">
-            <img src="Images/instagram.png" width="80" height="66" alt="Instagram"/>
+            <img src="Images/instagram.png" width="80" height="66" alt="Instagram" />
         </a>
         <a href="https://github.com/eNav" target="_blank">
-            <img src="Images/github.png" width="80" height="66" alt="GitHub"/>
+            <img src="Images/github.png" width="80" height="66" alt="GitHub" />
         </a>
     </footer>
 </body>
+
 </html>

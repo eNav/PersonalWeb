@@ -5,47 +5,81 @@
     width: 70%;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Slight background color */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Slight background color */
     color: #FFFFFF;
     border-radius: 8px;
     line-height: 1.6;
-  }
-  
-  .projects-section h2 {
-    color: #FFFFFF; /* Set text color to white */
+}
+
+.projects-section h2 {
+    color: #FFFFFF;
+    /* Set text color to white */
     margin-bottom: 20px;
-    text-align: center; /* Center the text */
-    font-size: 40px; /* Increase font size */
-  }
-  
-  .projects-section h3 {
+    text-align: center;
+    /* Center the text */
+    font-size: 40px;
+    /* Increase font size */
+}
+
+.projects-section h3 {
     font-size: 30px;
     color: #bfbfbf;
     margin-bottom: 10px;
-  }
-  
-  .projects-section p, .projects-section ul {
+}
+
+.projects-section p,
+.projects-section ul {
     margin: 10px 0;
     text-align: justify;
     font-size: 18px;
-  }
-  
-  .projects-section ul {
+}
+
+.projects-section ul {
     list-style-type: disc;
     margin-left: 40px;
-  }
-  
-  .projects-section li {
+}
+
+.projects-section li {
     margin-bottom: 10px;
-  }
-  
-  .projects-section .bold {
+}
+
+.projects-section .bold {
     font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+#github-activity-feed {
+
+
+    /* Added styles for scrollbar */
+    max-height: 400px;
+    /* Adjust this height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    overflow-x: hidden;
+}
+
+/* Optional: style the scrollbar for WebKit browsers (Chrome, Safari) */
+#github-activity-feed::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+#github-activity-feed::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 4px;
+    /* Rounded corners for the scrollbar thumb */
+}
+
+#github-activity-feed::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker color on hover */
+}
+
+
+@media (max-width: 768px) {
     .projects-section {
-      width: 90%;
+        width: 90%;
     }
-  }
-  
+}
