@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("personal.css");
+
+.projects-section {
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight background color */
+    color: #FFFFFF;
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+  
+  .projects-section h2 {
+    color: #FFFFFF; /* Set text color to white */
+    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+    font-size: 40px; /* Increase font size */
+  }
+  
+  .projects-section h3 {
+    font-size: 30px;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+  }
+  
+  .projects-section p, .projects-section ul {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  .projects-section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+  
+  .projects-section li {
+    margin-bottom: 10px;
+  }
+  
+  .projects-section .bold {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-section {
+      width: 90%;
+    }
+  }
+  
