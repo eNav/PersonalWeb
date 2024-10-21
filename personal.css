@@ -90,8 +90,16 @@ a {
 }
 
 #headshot {
-	margin-left:600px;
-	margin-top: 20px;
+  display: flex;                /* Use flexbox for centering */
+  justify-content: center;      /* Center content horizontally */
+  margin-top: 70px;           /* Maintain the top margin */
+}
+
+#headshot img {
+  width: 350px;                /* Set a normal width */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 50%;          /* Optional: makes it circular */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
 

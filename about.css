@@ -12,17 +12,6 @@
   color: #FFFFFF;
 }
 
-#headshot {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#headshot img {
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a box shadow to the image */
-  max-width: 100%; /* Make the image responsive */
-  height: auto;
-}
 
 h2 {
   text-align: center;
