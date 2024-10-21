@@ -69,9 +69,18 @@
 }
 
 .footer-img {
-   position: absolute;
+   position: fixed;
    bottom: 0;
    right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-img img{
+  filter: brightness(0) invert(1);
+  border: none;
 }
 
 .bio {
